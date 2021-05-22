@@ -1,0 +1,9 @@
+[package]
+name = "rust_mt_example"
+version = "0.0.1"
+authors = ["Ryo Kanbayashi <ryo.contact@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+lazy_static = "1.4.0"
+parking_lot = "0.11"
