@@ -3,8 +3,8 @@ use std::cell::RefCell;
 use parking_lot::{ReentrantMutex, const_reentrant_mutex};
 
 pub struct GlobalDatas {
-    pub all_data_list : Vec<Arc<ReentrantMutex<RefCell<KeyValue>>>>
-    //他のメンバも本来は存在するがこのスニペットでは省略する
+    pub all_data_list : Vec<Arc<ReentrantMutex<RefCell<KeyValue>>>>,
+    pub all_data_dict : HashMap<String, Arc<ReentrantMutex<RefCell<KeyValue>>>>,
 }
 
 impl GlobalDatas {
